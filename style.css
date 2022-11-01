@@ -1,0 +1,95 @@
+body, ul, li, p {
+    margin: 0px;
+    list-style: none;
+    font-family: "lato", sans-serif;
+}
+#logo {
+    margin-left: 1em;
+    width: 30px;
+    max-width: auto;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.menu li {
+    font-size: 0.7em;
+    justify-content: space-between;
+    display: block;
+    padding: 11px;
+    
+}
+
+menu li a {
+    font-size: 0.2em;
+    justify-content: space-between;
+    display: block;
+    
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: grey;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: rgb(71, 69, 69);
+    color: white;
+}
+
+div.content {
+    margin-top: 35px;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width:700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+@media screen and (max-width:400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
